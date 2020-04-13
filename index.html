@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Package</title>
+
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <!--STYLE CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"></div>
+    <h2><i class="far fa-clock"></i> How to code for title icon 😛😎</h2>
+    <pre class="prettyprint lang-html ">
+    &lt;link rel=&quot;icon&quot; href=&quot;img/food/kfc-logo.png&quot;&gt;</pre>
+    </div>
+
+    <div class="container"></div>
+    <h2><i class="far fa-clock"></i> Font Awesome link</h2>
+    <pre class="prettyprint lang-html ">
+    &lt;link rel=&quot;stylesheet&quot;href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css&quot;&gt;</pre>
+    </div>
+
+    <div class="container"></div>
+    <h2><i class="far fa-clock"></i> <a href="https://github.com/google/code-prettify"> Google-Prettify</a></h2>
+    <pre class="prettyprint lang-html ">
+    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js&quot;&gt;&lt;/script&gt;
+    &lt;pre class=&quot;prettyprint lang-html &quot;&gt;
+    &lt;/pre&gt;</pre>
+    </div>
+
+    <div class="container"></div>
+    <h2><i class="far fa-clock"></i> <a href="https://github.com/google/code-prettify"> HTML Escape / Unescape</a></h2>
+    <pre class="prettyprint lang-html ">
+    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js&quot;&gt;&lt;/script&gt;
+    &lt;pre class=&quot;prettyprint lang-html &quot;&gt;
+    &lt;/pre&gt;</pre>
+    </div>
+
+    <div class="container"></div>
+    <h2><i class="far fa-clock"></i> Colorful Background</h2>
+    <pre class="prettyprint ">
+    HTML
+    &lt;div id= &quot;header&quot;&gt;
+    &lt;/div&gt;
+
+
+    CSS
+    #header{
+        background-color: yellowgreen;
+        animation-name: changeColor;
+        animation-delay: 1s;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes changeColor{
+        0% {background-color: rgb(50, 205, 146);}
+        10% {background-color: yellowgreen;}
+        25% {background-color: #FF6663;}
+        50% {background-color: rgb(147, 24, 204);}
+        75% {background-color: #FEB144;}
+        100% {background-color: rgb(50, 205, 146);}
+    }</pre>
+    </div>
+
+    <div class="container"></div>
+    <h2><i class="far fa-clock"></i> Date Function</h2>
+    <pre class="prettyprint">
+    HTML
+    &lt;h1 id=&quot;date&quot;&gt;&lt;/h1&gt;
+
+    JAVASCRIPT
+    var v = setInterval(dateFun , 1);
+    function  dateFun() {
+        var d = new Date();
+        document.getElementById("date").innerHTML = d.toLocaleTimeString() + 
+        " ( " + d.toLocaleDateString() + " )";
+    }</pre>
+    </div>
+
+    <div class="container"></div>
+    <h2><i class="far fa-clock"></i> Greet Function</h2>
+    <pre class="prettyprint">
+    HTML
+    &lt;h1 id=&quot;forTime&quot;&gt;&lt;/h1&gt;
+
+    JAVASCRIPT
+    greet();
+    function greet() {
+        var d1 = new Date();
+        var hour = d1.getHours();
+        if(hour < 11){
+            document.getElementById("forTime").innerHTML = "Good Morning! CHO ";
+        }else{
+            if(hour < 16){
+                document.getElementById("forTime").innerHTML = "Good Afternoon! CHO ";
+            }
+            else{
+                if (hour < 19) {
+                    document.getElementById("forTime").innerHTML = "Good Evening! CHO ";
+                } else {
+                    if (hour <= 24) {
+                        document.getElementById("forTime").innerHTML = "Good Night! CHO ";
+                    }
+                }
+            }
+        }
+    }</pre>
+    
+
+    <div class="container"></div>
+    <h2><i class="far fa-clock"></i> Count Function</h2>
+    <pre class="prettyprint">
+    HTML
+    &lt;h1 id=&quot;countToTen&quot; &gt;&lt;/h1&gt;
+
+    JAVASCRIPT
+    start();
+    function start(){
+        var v2 =setInterval(count, 150);
+        var i = 1;
+        function count(){
+            if(i != 101){
+                document.getElementById("countToTen").innerHTML = i ;
+                i++;
+            }else {
+                document.getElementById("countToTen").style.display = "none";
+                document.getElementById("grade").innerHTML = "Perfect!";
+                document.getElementById("btnHa").style.display = "inline-block";
+                document.getElementById("btnSa").style.display = "inline-block";
+                document.getElementById("btnBor").style.display = "inline-block";
+            }
+        }
+    }</pre>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+</html>
